@@ -1,0 +1,162 @@
+*{margin: 0;
+padding: 0;
+}
+
+
+.menu{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+    background: #adadad;
+
+
+}
+.menu ul{
+    list-style:none;
+
+    }
+.menu ul a{
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 25px;
+    line-height: 60px;
+    display: block;
+    background: #BBBBBB;
+    color: #000000;
+    border-right: 1px solid black;
+
+}
+.menu ul a:hover{
+    background: #dce1dc;
+    transition: 1s;
+}
+
+#header{
+
+    height: 100vh;
+    position:relative;
+    text-transform:uppercase;
+    min-height:300px;
+}
+
+@keyframes slider{
+    0%{
+        left:0%;
+    }
+
+    45%{
+        left:0%;
+    }
+
+    50%{
+        left:-100%;
+    }
+
+    95%{
+        left:-100%;
+    }
+
+    100%{
+        left:-0%;
+    }
+
+}
+
+#slider{
+    overflow:hidden;
+    height:inherit;
+
+}
+
+#slider figure div{
+    width:50%;
+    height:100%;
+    float:left;
+
+}
+
+#slider figure{
+    position:relative;
+    width:200%;
+    height:inherit;
+    left:0;
+    margin:0;
+    animation: 15s slider infinite;
+
+}
+
+.s1{
+    background:url(img/pic1.jpg)center no-repeat;
+    background-size:cover;
+
+}
+
+.s2{
+    background:url(img/2.jpg)left no-repeat;
+    background-size:cover;
+
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+    width: 300px;
+    line-height: 10px;
+    text-align: center;
+
+}
+.text a{
+    text-decoration: none;
+    color: #0e0b02;
+    border: 1px solid #000000;
+    border-radius: 100%;
+    line-height: 100px;
+    padding: 15px 15px;
+    background-color: #b9b9b9;
+
+
+}
+#MainName {
+    /*создание тени*/
+    font-family: serif;
+    text-shadow: 0 3px 7px #f0ff65;
+    color: #0e0b02;
+
+}
+.text canvas{
+    height: 100%;
+    width: 110%;
+
+
+}
+#animation{
+
+    width: 110%;
+    height: 100%;
+
+
+
+}
+
+#div1{
+    border: solid #000c0c 3px;
+    background-color: black;
+    width: 1px;
+    height: 1px;
+    position: fixed;
+
+}
+.newDiv{
+    background-color: #010100;
+    width: 3px;
+    height: 3px;
+    position: fixed;
+
+}
